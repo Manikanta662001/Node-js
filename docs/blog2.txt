@@ -1,1 +1,3 @@
 This another blog
+ New Text
+New Text

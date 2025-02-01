@@ -9,21 +9,34 @@ const fs = require("fs");
   if (err) {
     console.log(err);
   }
-  console.log(data, data.toString());
+  console.log(data, data.toString(),typeof data);
 });
 
 console.log("after File Read"); */
 
 // writing files
 //if the file in that path exists it will override the text in that file with this new text.
-/* fs.writeFile("./docs/blog1.txt", "Hello World", () => {
-  console.log("Text was written in file");
-}); */
+// fs.writeFile("./docs/blog1.txt", "Hello World", (err) => {
+//   if (err) {
+//     console.log("ERROR:::", err.message);
+//   } else {
+//     console.log("Text was written in file");
+//   }
+// });
 
 //if the file in that path doesn't exists it will create a new file and write the text in that file.
 /* fs.writeFile("./docs/blog2.txt", "This another blog", () => {
   console.log("Text was written by creating a new file");
 }); */
+
+// appendFile : if the file exist it will add new Data to that file and if file does not exist it will create a new File.
+// fs.appendFile("./docs/blog22.txt", "\nNew Text", (err) => {
+//   if (err) {
+//     console.log("ERROR:::", err.message);
+//   } else {
+//     console.log("Text was written in file");
+//   }
+// });
 
 // creating directories
 //mkdir method is used if that folder doesn't exist it will create a new folder, if it already exists then it will give us error.
